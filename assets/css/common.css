@@ -1,0 +1,445 @@
+/* ee8992 */
+body * {
+  box-sizing: border-box;
+}
+
+#main {
+  margin: 100px 10px 10px 10px;
+}
+
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.base_color {
+  color: #333;
+}
+
+
+#header li.active {
+  transform: scale(1.2, 1.2)
+}
+
+/* ヘッダー */
+.sub_tab {
+  position: fixed;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #333;
+  color: #FFFFFF;
+  z-index: 100;
+}
+
+.sub_tab div {
+  height: 100%;
+  position: absolute;
+}
+
+.sub_tab ul {
+  position: relative;
+  margin: 0 10px;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+}
+
+.sub_tab ul li {
+  display: inline-block;
+  float: left;
+  height: 40px;
+  text-align: center;
+  background-color: #aaa;
+  border-radius: 4px 4px 0 0;
+  margin: 8px 2px 0 2px;
+}
+
+.sub_tab ul li.active {
+  background-color: #fff;
+  z-index: 100;
+}
+
+.sub_tab ul li a {
+  height: 100%;
+  display: inline-block;
+  padding: 6px 10px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #333;
+}
+
+.sub_tab ul li img {
+  height: 100%;
+  width: auto;
+}
+
+/*戻る進む*/
+.mark_button {
+  background-color: #333;
+  border: none;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  padding: 4px 10px;
+}
+
+.now {
+  display: inline-block;
+}
+img{
+	vertical-align:top;
+}
+.add_button_box{
+  margin-left:20px;
+  font-size: 12px;
+}
+.add_button {
+  width: 20px;
+  height: 20px;
+  background-color: #fff;
+  border: none;
+  margin-right:6px;
+}
+
+.add_button img {
+  width: 100%;
+  height: auto;
+  ;
+}
+
+.base_title {
+  color: #333;
+  font-size: 16px;
+}
+.textlines {
+  width: 100%;
+  height: 300px;
+  border-radius: 4px;
+  border: 2px solid #333;
+  background-color: #efefef;
+  padding: 4px;
+}
+
+/* 検索エリア */
+#serach_area {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+.search_title{
+  background-color: #eee;
+  font-size: 12px;
+  padding: 4px 10px;
+  overflow: hidden;
+}
+.search_title_left{
+  float:left;
+}
+.search_title_right{
+  float:right;
+}
+.search_img{
+  width:14px;
+}
+.clear_img{
+  width:12px;
+  margin-right:2px;
+}
+.search_box,
+.search_disp{
+  font-size: 12px;
+  padding: 4px 10px;
+}
+
+.search_disp img{
+  opacity: 0.3;
+}
+.search_disp .active img{
+  opacity: 1;
+}
+.search_select,
+.search_input{
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-left:4px;
+}
+
+/* リストエリア */
+#list_area {
+  margin-top: 20px;
+}
+
+.list_title{
+  display: inline-block;
+  font-size: 14px;
+  font-weight: bold;
+  color:#333;
+}
+.base_list {
+  width: 100%;
+}
+
+.base_list th {
+  background-color: #333;
+  color: #fff;
+  padding: 4px 6px;
+  font-size: 14px;
+
+}
+
+.base_list td {
+  font-size: 12px;
+  padding: 2px 4px;
+}
+
+.base_list tr:nth-child(2n+1),
+tr[data-s-h]:nth-child(2n+1) {
+  background: rgb(238, 238, 238);
+}
+
+.edit_box,
+.del_box{
+  width: 20px;
+}
+.list_edit,
+.list_del {
+  width: 20px;
+  height: 20px;
+}
+
+.list_input {
+  border-radius: 4px;
+  border: 2px solid #999;
+  height: 26px;
+  width:100%;
+}
+
+.list_select {
+  border-radius: 4px;
+  border: 2px solid #999;
+  height: 26px;
+}
+.modal_textarea{
+  border-radius: 4px;
+  border: 2px solid #999;
+  width: 100%;
+  height: 50px;
+}
+.modal_dete{
+  border-radius: 4px;
+  border: 2px solid #999;
+}
+
+#memoBox{
+  margin-top:30px;
+}
+
+/* 小さいリスト */
+table.list_table_min {
+  width: 100%;
+  margin-top: 16px;
+  font-size: 14px;
+
+
+}
+
+table.list_table_min td {
+  padding: 8px 4px 0 4px;
+}
+
+
+table.list_table_min .edit_box {
+  width: 30px;
+}
+
+table.list_table_min .name_box {
+  border-bottom: 1px dashed #555;
+}
+
+table.list_table_min .del_box {
+  width: 30px;
+}
+
+table.list_table_min .list_edit {
+  width: 20px;
+}
+
+table.list_table_min .list_del {
+  width: 16px;
+}
+/* インプット */
+/*
+.base_input {
+  border: 2px solid #333;
+  border-radius: 0.67em;
+  padding: 0.5em;
+  background-color: #eee;
+  box-sizing: border-box;
+  line-height: 1.2;
+  opacity: 0.5;
+}
+*/
+
+/*
+.base_button {
+  display: inline-block;
+  width: 70px;
+  height: 30px;
+  border-radius: 8px;
+  margin-left: 10px;
+  color: rgb(255, 255, 255);
+  font-size: 14px;
+  padding: 4px;
+  text-align: center;
+  border: none;
+}
+
+.on_button {
+  background-color: #666;
+}
+
+.off_button {
+  background-color: rgb(204, 204, 204);
+}
+
+.del_button {
+  margin-right: 10px;
+  display: inline-block;
+  width: 50px;
+  background-color: #fff6e6;
+  border-radius: 100px;
+  color: #ee8992;
+  font-size: 14px;
+  padding: 4px;
+  text-align: center;
+  border: none;
+  font-weight: 100;
+}
+*/
+
+
+
+
+/* モーダルと背景の指定 */
+.modal,
+.modal2 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background: rgba(0, 0, 0, 50%);
+  padding: 40px 20px;
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  transition: .3s;
+  box-sizing: border-box;
+}
+
+/* モーダルの擬似要素の指定 */
+.modal:before,
+.modal2:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  height: 100%;
+  margin-left: -0.2em;
+}
+
+/* クラスが追加された時の指定 */
+.modal.is-active,
+.modal2.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* モーダル内側の指定 */
+.modal-container {
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 600px;
+  width: 90%;
+}
+
+/* モーダルを閉じるボタンの指定 */
+.modal-close {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: -20px;
+  right: -20px;
+  width: 40px;
+  height: 40px;
+  color: #fff;
+  background: #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* モーダルのコンテンツ部分の指定 */
+.modal-content {
+  background: #fff;
+  text-align: left;
+  line-height: 1.8;
+  padding: 30px 20px;
+  border-radius: 10px;
+
+}
+
+.modal-content table {
+  color: #666;
+  font-size: 14px;
+  font-weight: bold;
+  width: 100%;
+  table-layout: fixed;
+
+}
+
+.modal-content th {
+  padding: 2px 8px;
+  border-bottom: 4px solid #fff;
+}
+
+.modal-content td {
+  padding: 2px 0 2px 8px;
+}
+
+.modal-content th {
+  background-color: #eee;
+}
+
+.modal_input {
+  border-radius: 4px;
+  border: 2px solid #999;
+}
+.modal-container input.modal_input {
+  width: 100%;
+}
+
+.modal_select {
+  border-radius: 4px;
+  border: 2px solid #999;
+}
+
+.modal-content .button {
+  margin-top: 20px;
+}
+
+.modal_button {
+  background-color: #333;
+  color: #fff;
+  width: 100%;
+  border-radius: 6px;
+  height: 30px;
+}
+
+
+@media screen and (min-width: 500px) {}
